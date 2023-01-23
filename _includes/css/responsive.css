@@ -1,0 +1,27 @@
+@media screen and (max-width: 1500px) and (min-width: 256px) {
+    html {
+        padding: 1rem;        
+    }    
+}
+
+@media screen and (max-width: 500px) and (min-width: 100px) {
+    html {
+        font-size: 1.25rem;        
+    }
+
+    header nav ul li, nav ul li {
+        font-size: 1rem;
+        display: inline-block;
+        padding: 1rem; 
+        margin: 0.10rem;       
+    }    
+
+    .nav-col {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .post-header {
+        font-size: 1rem;
+    }
+}

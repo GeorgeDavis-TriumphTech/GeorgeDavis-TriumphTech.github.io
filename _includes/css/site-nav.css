@@ -1,0 +1,29 @@
+.active {
+    color: #000;
+    background: #fff;    
+}
+
+ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    /* margin-right: 0.5rem; */
+    margin: 0.25rem;
+    border-radius: 0.15rem;
+    padding: 0.5rem 1.75rem;
+    /* border: 0.01rem solid #323; */
+    /* background: #989;         */
+}
+
+nav ul li:first-child {
+    border: 0;
+}
+
+nav ul {
+    margin-right: 0.5rem;
+    padding: 0.25rem;
+}

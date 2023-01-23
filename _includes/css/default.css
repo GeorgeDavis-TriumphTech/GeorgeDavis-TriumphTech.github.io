@@ -1,0 +1,125 @@
+html, input {
+    /* background: #888; */
+    margin: 0rem 0.5rem;
+    padding: 0.5rem;
+    font-family: Georgia, 'Bookman Old Style', 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+a {
+    text-decoration: none;
+    color: #13F;
+}
+
+.page-header {
+    width: 100%;
+}
+
+.page-content {
+    padding: 1rem;
+}
+
+.post-header {
+    width: 100%;
+}
+
+/* .nav-col p a {
+    color: #000;
+} */
+
+.post-content {
+    padding: 1rem;
+}
+
+.nav-col {
+    /*float: right;*/
+    max-width: 33%; 
+    padding: 3rem 0;   
+}
+    
+.nav-col p {
+    font-size: 1rem;
+    color: #FFF;      
+    display: block;
+    margin-left: 15px;
+}
+
+.do-not-publish {
+    display: none;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: #000;
+    background: #FFF;
+}
+
+::selection {
+    color: #000; 
+    background: #FFF;
+}
+
+/* .carousel-item {
+    padding: 10rem;
+} */
+
+.displayInline {
+    display: inline-block;
+}
+
+.floatRight {
+    float: right;
+}
+
+.marginTop20 {
+    margin-top: 20px;
+}
+
+.padding20 {
+    padding: 20px;
+}
+
+.paddingTB20 {
+    padding: 20px 0 20px 0;
+}
+
+.marginLR1 {
+    margin: 0 1rem 0 1rem;
+}
+
+.noStyleLink {
+    text-decoration: none;
+    color: #000;
+}
+
+.textH2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.slimTextH2 {
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.strongTextH4 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.textH4 {
+    font-size: 1.5rem;
+}
+
+.textH5 {
+    font-size: 1rem;
+}
+
+.btnText {
+    font-size: 1.5rem !important;
+}
+
+.section-break {
+    padding-top: 3.5rem;
+}
