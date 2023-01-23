@@ -1,0 +1,9 @@
+theme: kramdown
+exclude: ['README.md']
+permalink: pretty
+
+# Hosting settings
+title: "GD"
+domainUrl: "https://georgedavis-triumphtech.github.io"
+baseUrl: ""
+port: 80
