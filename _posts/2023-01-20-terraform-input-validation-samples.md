@@ -13,14 +13,11 @@ keywords: George Davis C, terraform, input validation
 
 ### {{ page.title }}
 
-{% highlight terraform %}
-    length(var.image_id) > 4 && substr(var.image_id, 0, 4) == \"ami-\"
-{% endhighlight %}
-
-{% for sample in site.data.tf-input-validation-samples %}        
-
-    ```terraform
-    {{ sample.command }} #{{ sample.comment }}
-    ```
+{% for sample in site.data.tf-input-validation-samples %}
+                
+    {% highlight terraform %}       
+        # {{ sample.comment }}
+        {{ sample.command }} 
+    {% endhighlight %}
 
 {% endfor %}

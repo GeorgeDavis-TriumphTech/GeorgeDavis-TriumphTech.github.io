@@ -1,7 +1,7 @@
 [  
     {
         "command": "length(var.image_id) > 4 && substr(var.image_id, 0, 4) == \"ami-\"",
-        "comment": ""        
+        "comment": "This is a comment"        
     },    
     {
         "command": "",

@@ -27,6 +27,8 @@
             {% include css/responsive.css %}
             /* Bootstrap 5.2.3 */
             {% include css/bootstrap.min.css %}
+            /* Jekyll Syntax Highlighting CSS dependencies */             
+            {% include css/pygments-css/monokai.css %}
         </style>
     </head>
     <body>
@@ -34,6 +36,8 @@
         {% include site-nav.html %} 
 
         {{content}}
+
+        {% include js/script.js %} 
 
         {% include footer.html %}        
     </body>
