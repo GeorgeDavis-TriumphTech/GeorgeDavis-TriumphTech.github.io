@@ -4,6 +4,7 @@ permalink: pretty
 
 # Hosting settings
 title: "GD"
+disclaimer: "This blog is a subset of my day-to-day at work. All opinions are my own."
 domainUrl: "https://georgedavis-triumphtech.github.io"
 baseUrl: ""
 port: 80

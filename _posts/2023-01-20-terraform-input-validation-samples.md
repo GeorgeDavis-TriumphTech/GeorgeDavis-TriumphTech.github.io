@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Terraform Input Validation Samples"
-meta: "Terraform Input Validation Samples"
+meta: "Terraform Input Validation Samples {{ site.disclaimer }}"
 author: "George Davis"
 category: "terraform"
 date: "January 20, 2023"
