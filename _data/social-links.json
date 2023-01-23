@@ -1,0 +1,27 @@
+[  
+    {
+        "title": "linkedin",
+        "link": "https://www.linkedin.com/in/georgedavisc",
+        "action": "pageVisit",
+        "selector": "linkedin",
+        "request": "social",
+        "trackingTrigger": "trackClickOnLinkedinLink"
+    },    
+    {
+        "title": "github",
+        "link": "https://github.com/GeorgeDavis-TriumphTech" ,
+        "action": "pageVisit",
+        "selector": "github",
+        "request": "social",
+        "trackingTrigger": "trackClickOnGitHubLink"
+        
+    },
+    {
+        "title": "twitter",
+        "link": "https://twitter.com/GDCrocx",
+        "action": "pageVisit",
+        "selector": "twitter",
+        "request": "social",
+        "trackingTrigger": "trackClickOnTwitterLink"
+    } 
+]
