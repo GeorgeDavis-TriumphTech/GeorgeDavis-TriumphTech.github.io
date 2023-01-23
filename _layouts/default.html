@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html amp lang="en-US">
+    <head>
+        <meta charset="utf-8">        
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+        <!-- <link rel="canonical" href="{{site.domainUrl}}{{site.baseurl}}{{page.url}}"> -->
+        <!-- Site Info -->
+        <title>{% if page.title %}{{page.title}} - {% endif %}George Davis</title>        
+        <!-- <link href="{{site.baseUrl}}/css/main.css" rel="stylesheet"> -->
+        <!-- <style>           
+        </style> -->
+        {% if page.meta %}<meta name="description" content="{{page.meta}}">{% endif %}
+        <!-- Apache Cordova Whitelist Good default declaration:
+            * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+            * Enable inline JS: add 'unsafe-inline' to default-src
+            * Enable eval(): add 'unsafe-eval' to default-src
+        -->
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; media-src 'self'"> -->
+        <style>
+            {% include css/default.css %}
+            {% include css/site-nav.css %}
+            {% include css/icons.css %}
+            /* Error 404 Page CSS */
+            {% include css/error-404.css %}
+            {% include css/footer.css %}
+            /* Site Layout and Responsiveness */
+            {% include css/responsive.css %}
+            /* Bootstrap 5.2.3 */
+            {% include css/bootstrap.min.css %}
+        </style>
+    </head>
+    <body>
+
+        {% include site-nav.html %} 
+
+        {{content}}
+
+        {% include footer.html %}        
+    </body>
+</html>
