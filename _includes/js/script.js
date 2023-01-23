@@ -14,7 +14,8 @@
       // Retrieve id from clicked element
       let elementId = e.target.id;      
       let code = codeBlocks[elementId].innerText.trim();
-      code.replace("Copy", "");
+      console.log(typeof(code));
+      code.slice(0,-4);
       console.log(code);
       window.navigator.clipboard.writeText(code);
 
