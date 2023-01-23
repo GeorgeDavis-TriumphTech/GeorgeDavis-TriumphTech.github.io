@@ -1,0 +1,20 @@
+---
+layout: default
+title: "Home"
+meta: This site reflects everything about George Davis's professional work portfolio and links you to his contact information. Please get in touch with George in case you have a startup idea, challenge or problem.
+priority: 1.0
+changefreq: weekly
+keywords: George Davis, professional blog, contact info, statically hosted, static site
+---
+
+<div class="nav-col">
+    <span class="post-header">Recently Published</span>
+    {% assign publishedPosts = site.posts | where: "status", "published" %}
+    {% for post in publishedPosts %}
+        {% assign postTimestamp = post.date | date: '%s' | integer %}        
+        {% assign nowTimestamp = 'now' | date: '%s' | integer %}        
+        {% if postTimestamp <= nowTimestamp %}
+            <p><a href="{{site.domainUrl}}{{site.baseUrl}}{{post.url}}">{{ post.title }}</a></p>
+        {% endif %}
+    {% endfor %}
+</div>
