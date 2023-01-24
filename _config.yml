@@ -2,6 +2,9 @@ theme: kramdown
 exclude: ['README.md']
 permalink: pretty
 
+# Google Analytics
+gtag-measurement-id: "G-GJV4REY8TT"
+
 # Hosting settings
 title: "GD"
 disclaimer: "This blog is a subset of my day-to-day at work. All opinions are my own."
