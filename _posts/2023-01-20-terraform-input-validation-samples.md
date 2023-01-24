@@ -13,25 +13,144 @@ keywords: George Davis C, terraform, input validation
 
 ### {{ page.title }}
 
-{% for sample in site.data.tf-input-validation-samples %}
-                
-    {% highlight terraform %}   
-        # {{ sample.comment }}
-        variable "{{ sample.name }}" {
-            type = {{ sample.type }}
-            default = "{{ sample.default }}"
-            description = "{{ sample.description }}"
-            {% for validation_check in sample.condition %}
-            validation {
-                condition = {{ validation_check }}
-                error_message = "{{ sample.error_message }}"
-            }
-            {% endfor %}
-            sensitive = {{ sample.sensitive_text }}
-        }
-    {% endhighlight %}
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Generic Validations
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        {% for sample in site.data.tf-input-validation-samples %}
 
-{% endfor %}
+            {% if sample.provider == "generic" %}
+                        
+                {% highlight terraform %}   
+                    # {{ sample.comment }}
+                    variable "{{ sample.name }}" {
+                        type = {{ sample.type }}
+                        default = "{{ sample.default }}"
+                        description = "{{ sample.description }}"
+                        {% for validation_check in sample.condition %}
+                        validation {
+                            condition = {{ validation_check }}
+                            error_message = "{{ sample.error_message }}"
+                        }
+                        {% endfor %}
+                        sensitive = {{ sample.sensitive_text }}
+                    }
+                {% endhighlight %}
+
+            {% endif %}
+
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        AWS
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        {% for sample in site.data.tf-input-validation-samples %}
+
+            {% if sample.provider == "aws" %}
+                        
+                {% highlight terraform %}   
+                    # {{ sample.comment }}
+                    variable "{{ sample.name }}" {
+                        type = {{ sample.type }}
+                        default = "{{ sample.default }}"
+                        description = "{{ sample.description }}"
+                        {% for validation_check in sample.condition %}
+                        validation {
+                            condition = {{ validation_check }}
+                            error_message = "{{ sample.error_message }}"
+                        }
+                        {% endfor %}
+                        sensitive = {{ sample.sensitive_text }}
+                    }
+                {% endhighlight %}
+
+            {% endif %}
+
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Azure
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        {% for sample in site.data.tf-input-validation-samples %}
+
+            {% if sample.provider == "azurerm" %}
+                        
+                {% highlight terraform %}   
+                    # {{ sample.comment }}
+                    variable "{{ sample.name }}" {
+                        type = {{ sample.type }}
+                        default = "{{ sample.default }}"
+                        description = "{{ sample.description }}"
+                        {% for validation_check in sample.condition %}
+                        validation {
+                            condition = {{ validation_check }}
+                            error_message = "{{ sample.error_message }}"
+                        }
+                        {% endfor %}
+                        sensitive = {{ sample.sensitive_text }}
+                    }
+                {% endhighlight %}
+
+            {% endif %}
+
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        Google
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        {% for sample in site.data.tf-input-validation-samples %}
+
+            {% if sample.provider == "google" %}
+                        
+                {% highlight terraform %}   
+                    # {{ sample.comment }}
+                    variable "{{ sample.name }}" {
+                        type = {{ sample.type }}
+                        default = "{{ sample.default }}"
+                        description = "{{ sample.description }}"
+                        {% for validation_check in sample.condition %}
+                        validation {
+                            condition = {{ validation_check }}
+                            error_message = "{{ sample.error_message }}"
+                        }
+                        {% endfor %}
+                        sensitive = {{ sample.sensitive_text }}
+                    }
+                {% endhighlight %}
+
+            {% endif %}
+
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
 
 ### Sources
 
