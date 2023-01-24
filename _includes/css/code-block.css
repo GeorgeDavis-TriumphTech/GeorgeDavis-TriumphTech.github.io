@@ -2,7 +2,7 @@ pre code>button {
     opacity: 0;
 }
 
-pre:hover>button {
+pre:hover>code button {
     opacity: 1;
 }
 
