@@ -18,7 +18,7 @@
       window.navigator.clipboard.writeText(code);
 
       copyButton.className = 'copy btn btn-success';
-      copyButton.innerText = 'Copied';
+      copyButton.innerText = 'Copied!';
 
       setTimeout(function () {
         copyButton.className = 'copy btn btn-primary';

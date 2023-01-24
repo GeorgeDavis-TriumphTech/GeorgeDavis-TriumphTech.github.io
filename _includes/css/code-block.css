@@ -10,3 +10,10 @@ pre code>button:active,
 pre code>button:focus {
     opacity: 1;
 }
+
+pre code button {
+    opacity: 1;
+    margin-top: -2%;
+    right: 10%;
+    position: absolute;
+}
