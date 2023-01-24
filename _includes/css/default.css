@@ -80,6 +80,10 @@ a {
     margin-top: 20px;
 }
 
+.padding5 {
+    padding: 5px;
+}
+
 .padding20 {
     padding: 20px;
 }
@@ -114,6 +118,11 @@ a {
 
 .textH4 {
     font-size: 1.5rem;
+}
+
+.strongTextH5 {
+    font-size: 1.25rem;
+    font-weight: 600;
 }
 
 .textH5 {
