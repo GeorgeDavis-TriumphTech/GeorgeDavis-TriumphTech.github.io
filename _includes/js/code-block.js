@@ -17,10 +17,12 @@
       code.slice(0,-4);
       window.navigator.clipboard.writeText(code);
 
+      copyButton.className = 'copy btn btn-success';
       copyButton.innerText = 'Copied';
 
       setTimeout(function () {
-        copyButton.innerText = 'Copy'
+        copyButton.className = 'copy btn btn-primary';
+        copyButton.innerText = 'Copy';
       }, 4000);
     });
 
