@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html amp lang="en-US">
+    <head>
+        <meta charset="utf-8">        
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+        <!-- <link rel="canonical" href="{{site.domainUrl}}{{site.baseurl}}{{page.url}}"> -->
+        <!-- Site Info -->
+        <title>{% if page.title %}{{page.title}} - {% endif %}George Davis</title>        
+        <!-- <link href="{{site.baseUrl}}/css/main.css" rel="stylesheet"> -->
+        <!-- <style>           
+        </style> -->
+        {% if page.meta %}<meta name="description" content="{{page.meta}}">{% endif %}
+        <!-- Apache Cordova Whitelist Good default declaration:
+            * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+            * Enable inline JS: add 'unsafe-inline' to default-src
+            * Enable eval(): add 'unsafe-eval' to default-src
+        -->
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; media-src 'self'"> -->
+        <style>
+            {% include css/default.css %}
+            {% include css/site-nav.css %}
+            {% include css/icons.css %}
+            /* Error 404 Page CSS */
+            {% include css/error-404.css %}
+            {% include css/footer.css %}
+            /* Site Layout and Responsiveness */
+            {% include css/responsive.css %}
+            /* Jekyll Syntax Highlighting CSS dependencies */             
+            {% include css/pygments-css/monokai.css %}
+            {% include css/code-block.css %}
+        </style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    </head>
+    <body>
+
+        {% include site-nav.html %} 
+
+        {{content}}
+
+        {% include js/code-block.js %} 
+        {% include js/script.js %} 
+
+        {% include footer.html %}
+
+    </body>
+</html>
