@@ -13,10 +13,8 @@
     copyButton.addEventListener('click', function (e) {
       // Retrieve id from clicked element
       let elementId = e.target.id;      
-      let code = codeBlocks[elementId].innerText.trim();
-      console.log(typeof(code));
+      let code = codeBlocks[elementId].innerText.trim();      
       code.slice(0,-4);
-      console.log(code);
       window.navigator.clipboard.writeText(code);
 
       copyButton.innerText = 'Copied';
@@ -29,3 +27,4 @@
     codeBlock.append(copyButton);
   });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
