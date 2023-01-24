@@ -18,11 +18,12 @@ keywords: George Davis C, terraform, input validation
     {% highlight terraform %}   
         # {{ sample.comment }}
         variable "{{ sample.name }}" {
-            type = "{{ sample.type }}"
+            type = {{ sample.type }}
+            default = "{{ sample.default }}"
             description = "{{ sample.description }}"
             {% for validation_check in sample.condition %}
             validation {
-                condition = "{{ validation_check }}"
+                condition = {{ validation_check }}
                 error_message = "{{ sample.error_message }}"
             }
             {% endfor %}
