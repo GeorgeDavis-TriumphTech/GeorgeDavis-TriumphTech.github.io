@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post-default
 title: "Terraform Input Validation Samples"
 meta: "Terraform Input Validation Samples"
 author: "George Davis"
