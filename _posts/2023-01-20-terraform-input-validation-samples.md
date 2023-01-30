@@ -155,16 +155,27 @@ keywords: George Davis C, terraform, input validation
 <span class="textH4">Sources</span>
 
 <ol>
-<li><span class="textH5">Terraform: Variable validation with samples</span> - <a href="https://dev.to/drewmullen/terraform-variable-validation-with-samples-1ank">https://dev.to/drewmullen/terraform-variable-validation-with-samples-1ank</a></li>
-<li><span class="textH5">Terraform variable validation</span> - <a href="https://medium.com/codex/terraform-variable-validation-b9b3e7eddd79](https://medium.com/codex/terraform-variable-validation-b9b3e7eddd79">https://medium.com/codex/terraform-variable-validation-b9b3e7eddd79](https://medium.com/codex/terraform-variable-validation-b9b3e7eddd79</a></li>
-<li><span class="textH5">Terraform Variable Validation</span> - <a href="https://brendanthompson.com/posts/2021/12/terraform-variable-validation">https://brendanthompson.com/posts/2021/12/terraform-variable-validation</a></li>
-<li><span class="textH5">Performing Terraform Variables Validation (With Azure Examples)</span> - <a href="https://jeffbrown.tech/terraform-variables-validation/">https://jeffbrown.tech/terraform-variables-validation/</a></li>
-<li><span class="textH5">Custom Validation Rules for Variables in Terraform</span> - <a href="https://www.thorsten-hans.com/custom-validation-rules-for-variables-in-terraform/">https://www.thorsten-hans.com/custom-validation-rules-for-variables-in-terraform/</a></li>
-<li><span class="textH5">Input validation – claim back your time from Terraform!</span> - <a href="https://binx.io/2021/07/12/input-validation-claim-back-your-time-from-terraform/">https://binx.io/2021/07/12/input-validation-claim-back-your-time-from-terraform/</a></li>
-<li><span class="textH5">Terraform validate list object</span> - <a href="https://www.oasys.net/fragments/terraform-validate-list-object/">https://www.oasys.net/fragments/terraform-validate-list-object/</a></li>
+  {% for ref in site.data.ref-tf-input-validation-samples %}
+
+    {% if ref.type == 'source' %}
+
+      <li><span class="textH5">{{ ref.title }}</span> - <a href="{{ ref.url }}" aria-label="{{ ref.type }}: {{ ref.title }}">{{ ref.url }}</a></li>
+
+    {% endif %}
+
+  {% endfor %}
 </ol>
 
 <span class="textH4">Knowledge Resources</span>
 <ol>
-<li><span class="textH5">Terraform Input Variables with Validation Rules</span> - <a href="https://terraformguru.com/terraform-certification-using-azure-cloud/27-Input-Variables-Validation-Rules/">https://terraformguru.com/terraform-certification-using-azure-cloud/27-Input-Variables-Validation-Rules/</a></li>
+
+  {% for ref in site.data.ref-tf-input-validation-samples %}
+
+    {% if ref.type == 'tutorial' %}
+
+      <li><span class="textH5">{{ ref.title }}</span> - <a href="{{ ref.url }}" aria-label="{{ ref.type }}: {{ ref.title }}">{{ ref.url }}</a></li>
+
+    {% endif %}
+
+  {% endfor %}
 </ol>

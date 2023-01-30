@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Terraform: Variable validation with samples",
+        "author": "",
+        "url": "https://dev.to/drewmullen/terraform-variable-validation-with-samples-1ank",
+        "type": "source"
+    },
+    {
+        "title": "Terraform variable validation",
+        "author": "",
+        "url": "https://medium.com/codex/terraform-variable-validation-b9b3e7eddd79",
+        "type": "source"
+    },
+    {
+        "title": "Terraform Variable Validation",
+        "author": "",
+        "url": "https://brendanthompson.com/posts/2021/12/terraform-variable-validation",
+        "type": "source"
+    },
+    {
+        "title": "Performing Terraform Variables Validation (With Azure Examples)",
+        "author": "",
+        "url": "https://jeffbrown.tech/terraform-variables-validation/",
+        "type": "source"
+    },
+    {
+        "title": "Custom Validation Rules for Variables in Terraform",
+        "author": "",
+        "url": "https://www.thorsten-hans.com/custom-validation-rules-for-variables-in-terraform/",
+        "type": "source"
+    },
+    {
+        "title": "Input validation – claim back your time from Terraform!",
+        "author": "",
+        "url": "https://binx.io/2021/07/12/input-validation-claim-back-your-time-from-terraform/",
+        "type": "source"
+    },
+    {
+        "title": "Terraform validate list object",
+        "author": "",
+        "url": "https://www.oasys.net/fragments/terraform-validate-list-object/",
+        "type": "source"
+    },
+    {
+        "title": "Terraform Input Variables with Validation Rules",
+        "author": "",
+        "url": "https://terraformguru.com/terraform-certification-using-azure-cloud/27-Input-Variables-Validation-Rules/",
+        "type": "tutorial"
+    }
+]
