@@ -1,7 +1,7 @@
 {% if {{include.entry.title}} %}
 
     <p>
-        <a href="{{site.domainUrl}}{{site.baseUrl}}{{include.entry.url}}">
+        <a href="{{site.domainUrl}}{{site.baseUrl}}{{include.entry.url}}" aria-label="{{ include.entry.title }}">
             {% if {{include.entry.title}} != 'Home' %}
                 {{include.entry.title}}
             {% else %}

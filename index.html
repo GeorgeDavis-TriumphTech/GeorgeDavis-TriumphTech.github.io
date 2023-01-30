@@ -14,7 +14,7 @@ keywords: George Davis, professional blog, contact info, statically hosted, stat
         {% assign postTimestamp = post.date | date: '%s' | integer %}        
         {% assign nowTimestamp = 'now' | date: '%s' | integer %}        
         {% if postTimestamp <= nowTimestamp %}
-            <p><a href="{{site.domainUrl}}{{site.baseUrl}}{{post.url}}">{{ post.title }}</a></p>
+            <p><a href="{{site.domainUrl}}{{site.baseUrl}}{{post.url}}" aria-label="{{ post.title }}">{{ post.title }}</a></p>
         {% endif %}
     {% endfor %}
 </div>
