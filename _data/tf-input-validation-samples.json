@@ -144,7 +144,7 @@
         "comment": "Validation to check for a valid list of CNAME aliases",
         "name": "cname_aliases",
         "type": "list(string)",
-        "default": "[]",
+        "default": [],
         "description": "Please enter a valid list of CNAME aliases",
         "condition": [
             "alltrue([for cname_alias in var.cname_aliases : can(regex(\"^[.0-9a-z-]+$\", cname_alias))"
